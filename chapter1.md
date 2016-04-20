@@ -23,6 +23,8 @@ cd('C:\Users\pkaroly\Google Drive\MATLAB course\Statistics Extension Course');
 allMyData = dir('MyData');
 ```
 
+The variable `allMyData` is a structure with information about the different files inside the folder 'MyData'. For instance, we can now see the file names and sizes. We can loop through these file names to sequentially load in lots of different data files.
+
 ```Matlab 
 % just print out the name of everything inside the folder
 allMyData.name
@@ -34,7 +36,7 @@ allMyData(3).name
 ```
 
 
-*Challenge One*
+### *Challenge One*
 ```Matlab 
 % CHALLENGE ONE
 % Use a loop to read in the first file in each folder
@@ -46,6 +48,23 @@ allMyData(3).name
 ## File names
 
 If you're looking for particular file names the functions 'string compare' (`strcmp`) and 'string find' (`strfind`) can be useful!
+
+
+
+```Matlab
+'hello' == 'hello'
+'hello' == 'goodbye'
+strcmp('hello','hello')
+```
+For instance to load a data file for one particular patient we can use `strcmp`
+
+```Matlab
+
+file_number = find(strcmp({Data.name},'patient1.xls'))
+load(Data
+
+```
+
 
 *Challenge Two*
 ``` matlab
