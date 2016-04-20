@@ -49,33 +49,74 @@ allMyData(3).name
 
 If you're looking for particular file names the functions 'string compare' (`strcmp`) and 'string find' (`strfind`) can be useful!
 
-
+Dealing with strings is not as easy as working with numbers. For instance, you cannot simply use `==` to tell you if two strings are the same. Try typing the following commands into MATLAB to see why.
 
 ```Matlab
 'hello' == 'hello'
 'hello' == 'goodbye'
 strcmp('hello','hello')
 ```
-For instance to load a data file for one particular patient we can use `strcmp`
 
+We can use `strcmp` to only load certain files, or to find the index of a particular file
 ```Matlab
-
 file_number = find(strcmp({Data.name},'patient1.xls'))
-load(Data
-
 ```
 
 
-*Challenge Two*
+###*Challenge Two*
 ``` matlab
 % CHALLENGE TWO
 % Work out the difference between strcmp and strfind
 ```
 
-If you need to get particular dates, numbers or names from a file name the 'regular expression' function (`regexp`) might help.
+If you need to get particular dates, numbers or names from a file name the 'regular expression' function (`regexp`) might help. For instance, let's say you only want to load data from measurments that were taken after a certain day. Using `strcmp` that would require an `if` statement that listed every possibility:
 
-*Challenge Three*
-``` matlab
+
+```Matlab
+% looping through lots of files
+for n = 1:1000
+
+  % get the file name
+  file_name = Data(n).name
+  
+  % using strcmp check if the file is one that we want
+  if strcmp(file_name,'Day15.xls') || strcmp(file_name,'Day16.xls') ...
+   || strcmp(file_name,'Day17.xls') || ... 
+                   % this could go on forever .....
+    
+    % load the file
+    load(file_name)
+    
+  end
+  
+end
+```
+
+Instead, we can use `regexp` to just pick out the part of the name we are interseted in  - i.e. the number. In MATLAB format strings numbers are represented by `\d`.
+```Matlab
+[start,end] = regexp(file_name,’\d’)
+```
+This command will just return the places in the file names that contain a number. This makes it easier to write a simple `if` statement that works for every file name:
+
+```Matlab
+% looping through lots of files
+for n = 1:1000
+
+  % get the file name
+  file_name = Data(n).name;
+  [start,end] = regexp(file_name,’\d’);
+  day_number = file_name(start:end)
+  
+  % using strcmp check if the file is one that we want
+  if day_number >= 15
+    load(file_name)
+  end
+  
+end
+```
+
+###*Challenge Three*
+```Matlab
 % CHALLENGE THREE
 % Can you use regexp to find:
 
@@ -85,13 +126,15 @@ If you need to get particular dates, numbers or names from a file name the 'regu
 
 % 3)
 ```
-*Challenge Four*
-```matlab
+###*Challenge Four*
+
+```Matlab
 % CHALLENGE
 % loop through the files and read in the four excel datasheets
 % save each dataset as a matlab file called HousingPrices_01,
 % HousingPrices_02, etc in chronological order (ie you will need
 % to read and use the date from the file name)
+
 % HINT: the function datenum is very useful for sorting dates into
 % chronological order
 ```
@@ -99,7 +142,8 @@ If you need to get particular dates, numbers or names from a file name the 'regu
 
 ## Converting Data
 
-*Challenge*
+
+###*Challenge*
 ```matlab
 % CHALLENGE
 % the variables in HousingPrices need to be converted to something we can

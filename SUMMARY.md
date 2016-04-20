@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Getting the Data](chapter1.md)
-* Visualizing the Data
+* [Visualizing the Data](visualizing_the_data.md)
 
