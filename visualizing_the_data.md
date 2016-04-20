@@ -29,3 +29,12 @@ In this example we'll look at the dataset called 'Pedestrian Counts', which cont
 18. Collins Place (North)
 
 Two tools that are used again and again when exploring data are scatter plots (`scatter`) and histograms (`hist` and `histc`). *NB both of these plots can also be achieved using the `plot` function*
+
+###*Challenge *
+
+## Scatter plots
+
+## Histograms
+
+###*Challenge*
+
