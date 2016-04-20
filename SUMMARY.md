@@ -3,4 +3,6 @@
 * [Introduction](README.md)
 * [Getting the Data](chapter1.md)
 * [Visualizing the Data](visualizing_the_data.md)
-
+* Fitting the Data
+* Testing the Data
+* Randomness & Simulation
