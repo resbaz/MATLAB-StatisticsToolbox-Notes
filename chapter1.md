@@ -2,20 +2,28 @@
  The first difficulty of real data is that it comes from many different sources, which may not be optimized for MATLAB. This part will cover some basic tricks for automatically reading in large amounts of data
 
 ## Folder structures
+In MATLAB you navigate between files using strings
 
-As always start your code with
 ```Matlab
-clear
-close all
-clc
+% Strings are defined using apostrophes
+string = 'Goodbye Cruel World';
+
+% File names are defined using strings
+file_name = 'MyData';
 ```
- 
-% get to where you want to be (cd = change directory)
-cd('C:\Users\pkaroly\Google Drive\MATLAB course\Statistics Extension Course')
+
+The function `cd` stands for 'change directory', and is used to set the current workspace. 
+The function `dir(file_name)` returns a list of files inside the folder called `file_name`.
+
+```Matlab 
+% get to where you want to be
+cd('C:\Users\pkaroly\Google Drive\MATLAB course\Statistics Extension Course');
  
 % get info about what's inside a particular folder (directory)
 allMyData = dir('MyData');
- 
+```
+
+```Matlab 
 % just print out the name of everything inside the folder
 allMyData.name
  
@@ -23,23 +31,7 @@ allMyData.name
 allMyData(1).name
 allMyData(2).name
 allMyData(3).name
- 
-% lets open the first patient
-Patient1 = dir(allMyData(3).name);   
- 
-% there's nothing there!
- 
-% need to tell it the root folder as well
-folderName = ['MyData/' allMyData(3).name];
-Patient1 = dir(folderName);
- 
-for n = 1:length(Patient1)
-   display(['name: ' Patient1(n).name ' size: ' num2str(Patient1(n).bytes/1000) 'kb']);
-   % load the third file
-   if n == 3
-      patientData = xlsread([folderName '/' Patient1(n).name]); 
-   end
-end
+```
 
 
 *Challenge One*
@@ -53,7 +45,7 @@ end
 
 ## File names
 
-If you're looking for particular file names the functions 'string compare' (*strcmp*) and 'string find' (*strfind*) can be useful!
+If you're looking for particular file names the functions 'string compare' (`strcmp`) and 'string find' (`strfind`) can be useful!
 
 *Challenge Two*
 ``` matlab
@@ -61,7 +53,7 @@ If you're looking for particular file names the functions 'string compare' (*str
 % Work out the difference between strcmp and strfind
 ```
 
-If you need to get particular dates, numbers or names from a file name the 'regular expression' function (*regexp*) might help.
+If you need to get particular dates, numbers or names from a file name the 'regular expression' function (`regexp`) might help.
 
 *Challenge Three*
 ``` matlab
