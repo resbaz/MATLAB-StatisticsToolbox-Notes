@@ -1,3 +1,2 @@
-# My Awesome Book
+# MATLAB Statistics Toolbox Course Notes
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
