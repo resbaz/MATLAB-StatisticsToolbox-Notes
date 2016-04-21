@@ -67,3 +67,12 @@ MATLAB gives you a default scatter plot that looks something like this (we can p
 
 ###*Challenge Two*
 
+###*Challenge Three*
+
+```Matlab
+%% CHALLENGE
+% Try download some other data you are interested in, read it in and 
+% visualize some aspect. You can use the user interface to try a few plots out, 
+% but once you are happy with your plot write it in a script!
+```
+
