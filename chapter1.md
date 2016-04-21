@@ -38,7 +38,7 @@ allMyData(3).name
 
 ### *Challenge One*
 ```Matlab 
-% CHALLENGE ONE
+% CHALLENGE
 % Use a loop to read in the first file in each folder
 % EXTENSION
 % use two loops to read in all the files in all the folders
@@ -65,7 +65,7 @@ file_number = find(strcmp({Data.name},'patient1.xls'))
 
 ###*Challenge Two*
 ``` matlab
-% CHALLENGE TWO
+% CHALLENGE
 % Work out the difference between strcmp and strfind
 ```
 
@@ -126,7 +126,7 @@ regexp('Patient104','\d+')
 
 ###*Challenge Three*
 ```Matlab
-% CHALLENGE THREE
+% CHALLENGE
 % Can you use regexp to find:
 
 % 1) The index at the at start of the word
@@ -160,6 +160,30 @@ file_list = {'Pt1Day14', 'Pt12Day102', 'Pt009Day9'}
 Usually you need data to be numerical, although often it comes in all sorts of formats. MATLAB has some good inbuilt functions to work with dates, such as `datevec` and `datenum`. `datenum` converts a date to a number of days, and `datevec` converts it back. These are very helpful for sorting and organizing data.
 
 ```Matlab
+% standard syntax is datenum(year,month,day)
+datenum(2012,2,1)
+
+% but lots of things work
+datenum('1 Feb 2012')
+
+% and if you're worried you can always 
+% specify the format
+datenum('01~02**2012','dd~mm**yyyy')
+
+% it will accept time as well (hours, minutes, seconds)
+datenum(2012,2,1,8,30,0)
+```
+`datenum` converts a date to the number of days since 00/00/0000 (so if your data is older than Christ you might be stuck). Then these numbers can easily be sorted into chronological order and converted back to a date using `datevec`
+
+```Matlab
+% datevec returns a date as a vector
+date = datenum('Oct-21-2015');
+[year,month,day,hour,min,second] = datevec(date)
+```
+
+We can combine these functions with `regexp` to extract and use dates from file names.
+
+```Matlab
 data = dir('House Price Data');
  
 for n = 1:length(data)
@@ -185,7 +209,7 @@ end
 ```
 
 
-###*Challenge*
+###*Challenge Five*
 ```matlab
 % CHALLENGE
 % the variables in HousingPrices need to be converted to something we can
