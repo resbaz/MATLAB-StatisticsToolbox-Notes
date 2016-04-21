@@ -129,7 +129,8 @@ regexp('Patient104','\d+')
 % CHALLENGE THREE
 % Can you use regexp to find:
 
-% 1) The index at the at start of the word 'cat' in the sentence 'the cat sat on the mat'
+% 1) The index at the at start of the word
+% 'cat' in the sentence 'the cat sat on the mat'
 
 string = 'the cat sat on the mat';
 pattern = 
@@ -140,22 +141,36 @@ regexp(string,pattern)
 pattern = 
 regexp(string,pattern)
 
-% 3) The words that start with 'c' and end in 't' in the following list
+% 3) The words that start with 'c' and end in 
+% 't' in the following list
 
 word_list = {'cat', 'mat', 'hat', 'cot'};
 pattern = 
 regexp(word_list,pattern)
 
-
 % EXTENSION
-% Can you write code that only extracts the day (as a number) from the following list of patient files
+% Can you write code that only extracts the day (as a number)
+% from the following list of patient files
 
 file_list = {'Pt1Day14', 'Pt12Day102', 'Pt009Day9'}
-pattern = '(?<=Day)\d+'
-regexp(file_list,pattern)
-
-
 ```
+
+## Converting Data
+
+Usually you need data to be numerical, although often it comes in all sorts of formats. MATLAB has some good inbuilt functions to work with dates, such as `datevec` and `datenum`. `datenum` converts a date to a number of days, and `datevec` converts it back. These are very helpful for sorting and organizing data.
+
+```Matlab
+data = dir('House Price Data');
+ 
+for n = 1:length(data)
+   file_name = data(n).name;
+   [s,e] = regexp(file_name,'\d\d-\d\d-\d\d\d\d');
+   if ~isempty(s)
+      date =  file_name(s:e);
+   end
+end
+```
+
 ###*Challenge Four*
 
 ```Matlab
@@ -168,9 +183,6 @@ regexp(file_list,pattern)
 % HINT: the function datenum is very useful for sorting dates into
 % chronological order
 ```
-
-
-## Converting Data
 
 
 ###*Challenge*
