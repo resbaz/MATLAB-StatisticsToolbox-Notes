@@ -92,11 +92,11 @@ for n = 1:1000
 end
 ```
 
-Instead, we can use `regexp` to just pick out the part of the name we are interseted in  - i.e. the number. In MATLAB format strings numbers are represented by `\d`.
+Instead, we can use `regexp` to just pick out the part of the name we are interested in  - i.e. the number. In MATLAB format strings numbers are represented by `\d`.
 ```Matlab
-[start,end] = regexp(file_name,'\d')
+[first,last] = regexp(file_name,'\d')
 ```
-This command will just return the places in the file names that contain a number. This makes it easier to write a simple `if` statement that works for every file name:
+This command will just return the first and last indices in the string `file_name` that contain a number. This makes it easier to write a simple `if` statement that works for every file name:
 
 ```Matlab
 % looping through lots of files
@@ -104,8 +104,8 @@ for n = 1:1000
 
   % get the file name
   file_name = Data(n).name;
-  [start,end] = regexp(file_name,'\d');
-  day_number = file_name(start:end)
+  [first,last] = regexp(file_name,'\d');
+  day_number = file_name(first:last)
   
   % using strcmp check if the file is one that we want
   if day_number >= 15
@@ -129,11 +129,32 @@ regexp('Patient104','\d+')
 % CHALLENGE THREE
 % Can you use regexp to find:
 
-% 1) 
+% 1) The index at the at start of the word 'cat' in the sentence 'the cat sat on the mat'
 
-% 2)
+string = 'the cat sat on the mat';
+pattern = 
+regexp(string,pattern)
 
-% 3)
+% 2) The indices at the start of the words 'cat' and 'mat'
+
+pattern = 
+regexp(string,pattern)
+
+% 3) The words that start with 'c' and end in 't' in the following list
+
+word_list = {'cat', 'mat', 'hat', 'cot'};
+pattern = 
+regexp(word_list,pattern)
+
+
+% EXTENSION
+% Can you write code that only extracts the day (as a number) from the following list of patient files
+
+file_list = {'Pt1Day14', 'Pt12Day102', 'Pt009Day9'}
+pattern = '(?<=Day)\d+'
+regexp(file_list,pattern)
+
+
 ```
 ###*Challenge Four*
 
