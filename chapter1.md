@@ -94,7 +94,7 @@ end
 
 Instead, we can use `regexp` to just pick out the part of the name we are interseted in  - i.e. the number. In MATLAB format strings numbers are represented by `\d`.
 ```Matlab
-[start,end] = regexp(file_name,’\d’)
+[start,end] = regexp(file_name,'\d')
 ```
 This command will just return the places in the file names that contain a number. This makes it easier to write a simple `if` statement that works for every file name:
 
@@ -104,7 +104,7 @@ for n = 1:1000
 
   % get the file name
   file_name = Data(n).name;
-  [start,end] = regexp(file_name,’\d’);
+  [start,end] = regexp(file_name,'\d');
   day_number = file_name(start:end)
   
   % using strcmp check if the file is one that we want
@@ -114,13 +114,22 @@ for n = 1:1000
   
 end
 ```
+NB: to keep numbers together using `regexp` use `'\d+'` instead of just `'\d'`. Try it out to see the difference:
+
+```Matlab
+regexp('Patient104','\d')
+```
+ or
+```Matlab
+regexp('Patient104','\d+')
+```
 
 ###*Challenge Three*
 ```Matlab
 % CHALLENGE THREE
 % Can you use regexp to find:
 
-% 1)
+% 1) 
 
 % 2)
 
