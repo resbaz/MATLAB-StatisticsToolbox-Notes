@@ -30,11 +30,40 @@ In this example we'll look at the dataset called 'Pedestrian Counts', which cont
 
 Two tools that are used again and again when exploring data are scatter plots (`scatter`) and histograms (`hist` and `histc`). *NB both of these plots can also be achieved using the `plot` function*
 
-###*Challenge *
 
 ## Scatter plots
+Let's see if there is any correlation between North and South Bourke Street.
+
+```Matlab
+
+% First get the dates of both locations by indexing
+% on their Sensor_ID value
+Dates_BourkeN = Date_Time(Sensor_ID == 1);
+Dates_BourkeS = Date_Time(Sensor_ID == 2);
+
+% Similarly, we can use indexing to separate out the 
+% count data for these specific locations
+BourkeN = Hourly_Counts(Sensor_ID == 1);
+BourkeS = Hourly_Counts(Sensor_ID == 2);
+
+% We need to find out which dates we have that are 
+% the same for both locations
+same_ind_South = ismember(Dates_BourkeS,Dates_BourkeN);
+same_ind_North = ismember(Dates_BourkeN,Dates_BourkeS);
+
+% We only want to compare the count data from the dates
+% that are the same for both locations
+BourkeS = BourkeS(same_ind_South);
+BourkeN = BourkeN(same_ind_North);
+
+% We can check for correlation by looking at the scatter plot
+scatter(BourkeN,BourkeS)
+```
+MATLAB gives you a default scatter plot that looks something like this (we can pretty it up later, but for now we can clearly see that there is a relationship between North and South Bourke Street).
+![](Part2a.jpg)
+###*Challenge One*
 
 ## Histograms
 
-###*Challenge*
+###*Challenge Two*
 
