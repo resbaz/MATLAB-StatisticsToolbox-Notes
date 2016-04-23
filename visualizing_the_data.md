@@ -32,7 +32,15 @@ Two tools that are used again and again when exploring data are scatter plots (`
 
 
 ## Scatter plots
-Let's see if there is any correlation between North and South Bourke Street.
+The scatter plot command `scatter(x,y)` creates a scatter plot of the data points in the vectors x and y.
+
+```Matlab
+x = 0:10;
+y = 10:-1:0;
+scatter(x,y)
+```
+
+Let's use scatter to see if there is any correlation between North and South Bourke Street.
 
 ```Matlab
 
@@ -73,6 +81,13 @@ MATLAB gives you a default scatter plot that looks something like this (we can p
 ```
 
 ## Histograms
+The `histogram(data,bins)` plots a histogram of all the data points between the values of bins (i.e. `bins = 0:10:100` will create a histogram that goes from 0 to 100 with bins of width 10). 
+
+```Matlab
+data = randi(100,1,100);
+histogram(data,0:10:100);
+```
+
 We're going to plot the distribution of foot traffic at Flinders Street station at different times of day.
 Flinders Street station is sensor number 6.
 
@@ -127,6 +142,12 @@ histogram(Flinders11,0:100:max(Flinders11));
 legend({'8am - 9am','11am - 12pm'})
 ```
 ![](Data2b.jpg)
+Note that using the `hold on` command automatically assigns two different colors to the plots. 
+
+You can plot the probability density instead of counts on the y-axis using the option:
+```Matlab
+histogram(Flinders11,0:100:max(Flinders11),'Normalization','pdf')
+```
 
 ###*Challenge Two*
 ```Matlab
