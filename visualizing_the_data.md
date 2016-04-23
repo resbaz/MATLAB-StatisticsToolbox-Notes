@@ -129,13 +129,32 @@ legend({'8am - 9am','11am - 12pm'})
 ![](Data2b.jpg)
 
 ###*Challenge Two*
+```Matlab
+% CHALLENGE
+% Plot histograms of two different times for at
+% another location
+
+% EXTENSION TASKS
+% Plot histograms for 8am on Monday at Flinders Street
+% and 8am on Sunday at Flinders Street
+% HINT: The function 'weekday' will help a lot!
+
+% Plot a scatter plot between 8am and 5pm
+% at Flinders Street station to see if 
+% there is any correlation
+
+% Think of another question you're interested in 
+% learning about from this data and make a plot!
+```
 
 ###*Challenge Three*
 
 ```Matlab
 %% CHALLENGE
-% Try download some other data you are interested in, read it in and 
-% visualize some aspect. You can use the user interface to try a few plots out, 
-% but once you are happy with your plot write it in a script!
+% Try download some other data you are interested in
+% read it in and visualize some aspect. 
+% You can use the user interface to try a few plots out, 
+% but once you are happy with your plot write it in a
+% script!
 ```
 
