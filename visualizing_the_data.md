@@ -65,6 +65,8 @@ MATLAB gives you a default scatter plot that looks something like this (we can p
 
 ## Histograms
 
+![](Data2b.jpg
+
 ###*Challenge Two*
 
 ###*Challenge Three*
