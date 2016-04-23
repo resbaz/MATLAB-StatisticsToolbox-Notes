@@ -62,10 +62,71 @@ scatter(BourkeN,BourkeS)
 MATLAB gives you a default scatter plot that looks something like this (we can pretty it up later, but for now we can clearly see that there is a relationship between North and South Bourke Street).
 ![](Part2a.jpg)
 ###*Challenge One*
+```Matlab
+% CHALLENGE
+% Create a scatter plot of two new locations
+
+% EXTENSION TASKS
+% Customize your plot - give it axis labels and 
+% change the colors
+
+```
 
 ## Histograms
+We're going to plot the distribution of foot traffic at Flinders Street station at different times of day.
+Flinders Street station is sensor number 6.
 
-![](Data2b.jpg
+```Matlab
+% Date/time of measurements at flinders street station
+Dates_Flinders = Date_Time(Sensor_ID == 6);
+
+% Hourly counts at flinders street station
+Count_Flinders = Hourly_Counts(Sensor_ID == 6);
+```
+we can use `datevec` to convert the dates to vectors
+
+```Matlab
+Dates_Flinders(1)
+
+ans = 
+
+   01-May-2009
+
+datevec(Dates_Flinders(1))
+
+ans =
+
+        2009           5           1           0           0           0
+
+```
+We can convert all the dates and only select the hours want
+```Matlab
+% get the dates as a vector
+Dates_Flinders = datevec(Dates_Flinders);
+
+% The format is year-mon-day-hour-min-second
+Hour_Flinders = Dates_Flinders(:,4);
+Hour_SC = Dates_SC(:,4);
+```
+Let's look at the difference between 8am and 11am. We can pull out every measurement that was taken at 8am by indexing using our hour values in `Hour_Flinders`. 
+```Matlab
+% Look at 8am vs 11am for Flinders St
+Flinders8 = Count_Flinders(Hour_Flinders==8);
+Flinders11 = Count_Flinders(Hour_Flinders==11);
+```
+We can display the two distributions as histograms using MATLABs default `hist` command
+```Matlab
+figure;
+% plot the first distribution
+histogram(Flinders8,0:100:max(Flinders8));
+% leave the plot in position
+hold on
+% plot the second distribution
+histogram(Flinders11,0:100:max(Flinders11));
+% create a legend
+legend({'8am - 9am','11am - 12pm'})
+```
+![](Data2b.jpg)
 
 ###*Challenge Two*
 
