@@ -63,7 +63,7 @@ P =
 ``` Matlab
 % CHALLENGE
 % What happens to the correlation coefficients
-% if you add white Gaussian noise
+% if you add Gaussian noise
 % to the lines in the matrix X?
 
 % EXTENSION
