@@ -87,23 +87,6 @@ x = t .^ idx;
 % sinusoidal instead of linear? 
 
 ```
-     
-
-
-
-
-The function`xcorr(x,y)` gives the cross-correlation between two time series `x` and `y`.
-
-### *Challenge*
-``` Matlab
-% CHALLENGE
-% What is the correlation value between Bourke Street North
-% and Bourke Street South?
-% Check the linear 
-
-% EXTENSION
-
-```
 
 ## Clustering
 
