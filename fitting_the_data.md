@@ -66,6 +66,9 @@ P =
 % if you add Gaussian noise
 % to the lines in the matrix X?
 
+% HINT: randn(m,n) will create a m-by-n matrix 
+% of Gaussian noise with mean 0 and std 1. 
+
 % EXTENSION
 % What about if you make the functions in X 
 % sinusoidal instead of linear? 
