@@ -34,6 +34,8 @@ end
 % plot
 plot(X)
 ```
+And look at the correlation coefficients
+
 ``` Matlab
 corr(X)
 
@@ -44,6 +46,8 @@ ans =
      1     1     1     1
      1     1     1     1
 ```
+
+We can also get the p-values to see if the columns of X are significantly correlated.
 
 ### *Challenge*
 ``` Matlab
