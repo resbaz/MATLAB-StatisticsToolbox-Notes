@@ -10,7 +10,9 @@ The function`xcorr(x,y)` gives the
 
 The function `kmeans` is a good "quick and dirty" way to segment data into groups. There are plenty of other more sophisticated options in the Machine Learning Toolbox.
 
+### *Challenge*
 ``` Matlab
+% CHALLENGE 
 % Look up kmeans and use it to cluster the previous 
 % data into two groups
 ```
@@ -19,8 +21,11 @@ The function `kmeans` is a good "quick and dirty" way to segment data into group
 
 We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
 
-### *
-
+### *Challenge*
+``` Matlab
+% CHALLENGE
+% Fit a normal distribution to each of the clusters
+```
 
 
 ## Regression
