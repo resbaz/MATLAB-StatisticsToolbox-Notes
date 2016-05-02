@@ -9,7 +9,6 @@ The function `corr(x,y)` gives the pairwise correlation coefficient between the 
 x = 1:10;
 y = 10:-1:1;
 
-% take the transpose so they are columns
 >> corr(x',y')
 
 ans =
