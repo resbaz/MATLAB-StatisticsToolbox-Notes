@@ -3,7 +3,19 @@
 We can make the observations from scatter plots & histograms more formal by looking at correlation values and pdf curves.
 
 ## Correlation
-The function `corr(x,y)` gives the pairwise correlation coefficient between the vectors `x` and `y`.
+The function `corr(x,y)` gives the pairwise correlation coefficient between the column vectors `x` and `y` (they have to be columns).
+
+``` Matlab
+x = 1:10;
+y = 10:-1:1;
+
+% take the transpose so they are columns
+corr(x',y')
+
+ans =
+
+    -1
+```
 
 
 
