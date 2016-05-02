@@ -1,6 +1,10 @@
 # Fitting the Data
 
-## Probability
+## Correlation & Probability
+We're going to make our scatter plots & histograms more formal by looking at correlation values and pdf functions.
+
+Look up `xcorr(x,y)` returns 
+
 We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
 
 ### Kernel density
