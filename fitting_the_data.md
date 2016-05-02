@@ -17,7 +17,7 @@ ans =
     -1
 ```
 
-It also works on a matrix
+The `corr` function can also be used to get a matrix of pairwise correlation coefficients of every column in a matrix. Let's create a matrix `X` with different linear functions in each column.
 
 ``` Matlab
 % time
