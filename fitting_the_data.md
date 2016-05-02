@@ -10,7 +10,7 @@ x = 1:10;
 y = 10:-1:1;
 
 % take the transpose so they are columns
-corr(x',y')
+>> corr(x',y')
 
 ans =
 
@@ -37,7 +37,7 @@ plot(X)
 And look at the correlation coefficients
 
 ``` Matlab
-corr(X)
+>> corr(X)
 
 ans =
 
@@ -48,6 +48,17 @@ ans =
 ```
 
 We can also get the p-values to see if the columns of X are significantly correlated (p < 0.05 would mean yes - maybe). DISCLAIMER this sort of test isn't suitable for all data. Consult your friendly neighbourhood statistician if you're not sure.
+
+``` Matlab
+>> [Corr,P] = corr(X)
+
+P =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+```
 
 ### *Challenge*
 ``` Matlab
