@@ -4,7 +4,9 @@ We can make the observations from scatter plots & histograms more formal by look
 
 ## Correlation
 
-The function`xcorr(x,y)` gives the 
+The function`xcorr(x,y)` gives the cross-correlation between two time series `x` and `y`.
+
+### *Challenge*
 
 ## Clustering
 
