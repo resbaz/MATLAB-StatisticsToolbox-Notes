@@ -6,8 +6,8 @@ We can make the observations from scatter plots & histograms more formal by look
 The function `corr(x,y)` gives the pairwise correlation coefficient between the column vectors `x` and `y` (they have to be columns).
 
 ``` Matlab
-x = 1:10;
-y = 10:-1:1;
+>> x = 1:10;
+>> y = 10:-1:1;
 
 >> corr(x',y')
 
