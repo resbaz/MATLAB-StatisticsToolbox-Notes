@@ -47,7 +47,7 @@ ans =
      1     1     1     1
 ```
 
-We can also get the p-values to see if the columns of X are significantly correlated (p < 0.05 would mean they are). DISCLAIMER this sort of test isn't suitable for all data. Consult your friendly neighbourhood statistician if you're not sure.
+We can also get the p-values to see if the columns of X are significantly correlated (p < 0.05 would mean yes - maybe). DISCLAIMER this sort of test isn't suitable for all data. Consult your friendly neighbourhood statistician if you're not sure.
 
 ### *Challenge*
 ``` Matlab
