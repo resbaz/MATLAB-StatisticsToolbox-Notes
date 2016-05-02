@@ -46,7 +46,7 @@ ans =
      1     1     1     1
 ```
 
-We can also get the p-values to see if the columns of X are significantly correlated (p < 0.05 would mean yes - maybe). DISCLAIMER this sort of test isn't suitable for all data. Consult your friendly neighbourhood statistician if you're not sure.
+We can also get the p-values to see if the columns of X are significantly correlated (p < 0.05 for yes - maybe). DISCLAIMER this sort of test isn't suitable for all data. Consult your friendly neighbourhood statistician if you're not sure.
 
 ``` Matlab
 >> [Corr,P] = corr(X)
@@ -68,6 +68,19 @@ P =
 
 % HINT: randn(m,n) will create a m-by-n matrix 
 % of Gaussian noise with mean 0 and std 1. 
+```
+
+### *Challenge*
+
+``` Matlab
+% CHALLENGE
+% What about non-linear data?
+% Test the correlation with the function 
+
+x = t .^ idx;
+
+% Try using the rank correlation instead using
+% corr(X,'type','Spearman')
 
 % EXTENSION
 % What about if you make the functions in X 
