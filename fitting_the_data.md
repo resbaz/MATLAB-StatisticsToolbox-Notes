@@ -21,7 +21,7 @@ The function `kmeans` is a good "quick and dirty" way to segment data into group
 
 ## Probability
 
-We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
+We can fit the probability density function to our histograms using a kernel-density estimation (`ksdensity`), or we can check the fit of specific distribution shapes, such as Gaussian, exponential, etc (`fitdist`).
 
 ### *Challenge*
 ``` Matlab
