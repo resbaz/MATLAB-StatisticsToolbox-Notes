@@ -1,11 +1,10 @@
 # Fitting the Data
 
-## Correlation & Probability
-We're going to make the observations from scatter plots & histograms more formal by looking at correlation values and pdf curves.
+We can make the observations from scatter plots & histograms more formal by looking at correlation values and pdf curves.
 
-Look up `xcorr(x,y)`
+## Correlation
 
-We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
+The function`xcorr(x,y)` gives the 
 
 ## Clustering
 
@@ -15,6 +14,14 @@ The function `kmeans` is a good "quick and dirty" way to segment data into group
 % Look up kmeans and use it to cluster the previous 
 % data into two groups
 ```
+
+## Probability
+
+We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
+
+### *
+
+
 
 ## Regression
 
