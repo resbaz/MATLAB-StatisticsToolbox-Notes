@@ -3,6 +3,10 @@
 ## Probability
 We can fit a pdf to our histograms using a kernel-density estimation (`ksdensity`), or we can check different types of distribution like Gaussian, exponential, etc (`fitdist`).
 
+### Kernel density
+
+
+
 
 ## Clustering
 
