@@ -17,6 +17,49 @@ ans =
     -1
 ```
 
+It also works on a matrix
+
+``` Matlab
+% time
+t = 0:0.01:1;
+% Number of loops
+Nloops = 4;
+% initialize matrix
+X = zeros(length(t),Nloops);
+% loop through
+for idx = 1:Nloops;
+  % create a line with different slope
+  X(:,idx) = idx .* t;      
+end
+% plot
+plot(X)
+```
+``` Matlab
+corr(X)
+
+ans =
+
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+```
+
+### *Challenge*
+``` Matlab
+% CHALLENGE
+% What happens to the correlation coefficients
+% if you add white Gaussian noise
+% to the lines in the matrix X?
+
+% EXTENSION
+% What about if you make the functions in X 
+% sinusoidal instead of linear? 
+
+```
+     
+
+
 
 
 The function`xcorr(x,y)` gives the cross-correlation between two time series `x` and `y`.
