@@ -92,13 +92,18 @@ I guess the organizers of that panel are safe in the knowledge that significance
 
 ### *Challenge*
 Use `normcdf` to work out the probability of being less than or equal to two women. Because we are working with a binomial distribution with $$n=10$$  (number on the panel) and $$p = 0.5$$  (chance of a woman being chosen) we can approximate a normal distribution with mean, $$\mu = np$$ and variance, $$\sigma = np(1-p)$$
+
+NB: Gaussians are continuous and binomial values are discrete. One way to make the conversion and calculate the probability that the number of women is less than or equal to 2, is to use the value 2.5. (If you wanted to know the probability of there being strictly less than 2 women, you would use 1.5).
 ``` Matlab
 %% CHALLENGE
 
-mu = 
+% mu
+
+% sigma
+
+% calculate the Gaussian cumulative distribution for 2.5
 ```
 
-What if we assume there are twice as many men working in academia in STEM fields, so each panel member is twice as likely to be male?
 
 ### *Challenge*
 The birthday party problem is a classic example of how humans can underestimate chance events.
