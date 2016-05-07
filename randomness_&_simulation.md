@@ -24,3 +24,13 @@ ans =
    -2.2588
 ```
 
+To generate random integers on the range [a b] we can use
+``` Matlab
+a = -10;
+b = 10;
+randi([a b])
+
+ans =
+
+     9
+```
