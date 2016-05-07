@@ -90,7 +90,6 @@ ans =
 
 I guess the organizers of that panel are safe in the knowledge that significance is tested at LESS than 5%. They're still on shaky ground if you ask me.
 
-
 What if we approximate the above histogram as a Gaussian? 
 
 ``` Matlab
