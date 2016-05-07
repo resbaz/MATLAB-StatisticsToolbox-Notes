@@ -91,6 +91,19 @@ ans =
 I guess the organizers of that panel are safe in the knowledge that significance is tested at LESS than 5%. They're still on shaky ground if you ask me.
 
 ### *Challenge*
+What if we approximate the above histogram as a Gaussian? 
+
+``` Matlab
+% plot the result
+histogram(Nwomen,-0.5:10.5,'normalization','pdf')
+hold on;
+% plot a Gaussian pdf over values from 0 to 10, 
+% with the same mean and variance as our binomial
+plot(0:10,normpdf(0:10,mean(Nwomen),std(Nwomen)),'linewidth',2)
+```
+
+![](Nwomen2.jpg)
+
 Use `normcdf` to work out the probability of being less than or equal to two women. Because we are working with a binomial distribution with $$n=10$$  (number on the panel) and $$p = 0.5$$  (chance of a woman being chosen) we can approximate a normal distribution with mean, $$\mu = np$$ and variance, $$\sigma = np(1-p)$$
 
 NB: Gaussians are continuous and binomial values are discrete. One way to make the conversion and calculate the probability that the number of women is less than or equal to 2, is to use the value 2.5. (If you wanted to know the probability of there being strictly less than 2 women, you would use 1.5).
