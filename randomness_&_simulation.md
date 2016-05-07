@@ -1,6 +1,6 @@
 # Randomness & Simulation
 
-The command `rand` and `randn` can be used to generate random numbers (uniform or normally distributed respectively), which is useful for Monte Carlo simulations or permutation testing.
+The command `rand`, `randn`, and `randi` can be used to generate random numbers (uniform, normally distributed, or integers respectively), which is useful for Monte Carlo simulations or permutation testing.
 
 To generate random numbers from a uniform distribution between [a b] we can use
 ``` Matlab
