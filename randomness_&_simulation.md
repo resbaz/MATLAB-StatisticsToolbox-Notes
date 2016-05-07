@@ -45,4 +45,12 @@ ans =
 The essence of simulation is using random numbers in a loop. For example let's say there is a panel of 
 
 ### *Challenge*
-The birthday party problem is a classic example of how much humans underestimate statistics
+The birthday party problem is a classic example of how humans can underestimate chance events.
+
+How many people do you need to have in a room for there to be a more than 50% chance that two of them will have the same birth date? (Assume every birth date is equally likely).
+
+``` Matlab
+% CHALLENGE
+% Use a simulation to numerically estimate the answer
+% to the birthday party problem
+```
