@@ -34,3 +34,10 @@ ans =
 
      9
 ```
+
+```Matlab
+% CHALLENGE
+% Work out how to use the rand, randn and randi commands
+% to generate a random matrix instead of a
+% single numbers
+```
