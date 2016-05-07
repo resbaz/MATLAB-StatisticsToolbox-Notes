@@ -55,7 +55,37 @@ ans =
      1     4     6     1     2
 ```
 
-Using random numbers in a loop is a major part of running simulations. For example let's say there is a panel of 
+Using random numbers in a loop is a major part of running simulations. For example let's say there is a panel of 10 scientists at a conference, and two of them are women. How likely is it that that the outcome would happen by chance?
+
+We can simulate one million random panels to check.
+``` Matlab
+% 1 million trials
+Ntrials = 1e6;
+% intialize count of women in the panel
+Nwomen = zeros(1,Ntrials);
+
+for n = 1:Ntrials
+    
+    % generate a random panel
+    panel = rand(1,10);
+    % let the probability a member is a woman be 50%
+    Nwomen(n) = sum(panel > 0.5);
+    
+end
+
+% plot the result
+histogram(Nwomen,-0.5:10.5,'normalization','pdf')
+```
+
+The probability that the panel has less than three women is 
+
+```Matlab
+100 * sum(Nwomen <= 2) / Ntrials
+
+ans =
+
+    5.4748
+```
 
 ### *Challenge*
 The birthday party problem is a classic example of how humans can underestimate chance events.
