@@ -76,8 +76,9 @@ end
 % plot the result
 histogram(Nwomen,-0.5:10.5,'normalization','pdf')
 ```
+![](Nwomen.jpg)
 
-The probability that the panel has less than three women is 
+The probability that the panel has less than three women is 5.5%
 
 ```Matlab
 100 * sum(Nwomen <= 2) / Ntrials
@@ -86,6 +87,18 @@ ans =
 
     5.4748
 ```
+
+I guess the organizers of that panel are safe in the knowledge that significance is tested at LESS than 5%. They're still on shaky ground if you ask me.
+
+### *Challenge*
+Use `normcdf` to work out the probability of being less than or equal to two women. Because we are working with a binomial distribution with $$n=10$$  (number on the panel) and $$p = 0.5$$  (chance of a woman being chosen) we can approximate a normal distribution with mean, $$\mu = np$$ and variance, $$\sigma = np(1-p)$$
+``` Matlab
+%% CHALLENGE
+
+mu = 
+```
+
+What if we assume there are twice as many men working in academia in STEM fields, so each panel member is twice as likely to be male?
 
 ### *Challenge*
 The birthday party problem is a classic example of how humans can underestimate chance events.
