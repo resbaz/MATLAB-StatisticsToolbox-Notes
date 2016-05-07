@@ -34,7 +34,7 @@ ans =
 
      9
 ```
-
+### *Challenge*
 ```Matlab
 % CHALLENGE
 % Work out how to use the rand, randn and randi commands
