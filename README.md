@@ -19,16 +19,16 @@ The evidence against the couple was scant, and the case rested heavily on the id
 
 Unfortunately for the prosecution, neither proved to be a star on the witness stand. The victim could not identify Janet as the perpetrator and hadn’t seen the driver at all. John Bass had not seen the perpetrator and said at the police lineup that he could not positively identify Malcolm Collins as the driver. And so, it seemed, the case was falling apart.
 
-Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] a Negro with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision:
+Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] a Negro with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
 
-**Characteristic Individual Probability**
-
-* Partly yellow automobile  1⁄10
-* Man with mustache 1⁄4
-* Negro man with beard 1⁄10
-* Girl with ponytail 1⁄10
-* Girl with blond hair 1⁄3
-* Interracial couple in car 1⁄1,000
+| Characteristic | Individual Probability |
+| -- | -- |
+| Partly yellow automobile | $$\frac{1}{10}$$ |
+| Man with mustache  | $$\frac{1}{4}$$ |
+| Negro man with beard  | $$\frac{1}{10}$$ |
+| Girl with ponytail  | $$\frac{1}{10}$$ |
+| Girl with blond hair  | $$\frac{1}{3}$$ |
+| Interracial couple in car |  $$\frac{1}{1000}$$ |
 
 The math instructor called by the prosecution concluded that the chances of a couple fitting all these distinctive
 characteristics are 1 in 12 million. Accordingly, he said, one could infer that the chances that the couple was innocent were 1 in 12 million.
