@@ -18,12 +18,9 @@ dark,” and had hair “between a dark blond and a light blond,” but lighter 
 on the street at the end of the alley, was in front of his house watering his lawn. His attention was attracted by “a lot of crying and screaming” coming from the alley. As he looked in that direction, he saw a woman run out of the alley and enter a yellow automobile parked across the street from him. He was unable to give the make of the car. The car started off immediately and pulled wide around another parked vehicle so that in the narrow street it passed within six feet of Bass. The latter then saw that it was being driven by a male Negro, wearing a mustache and beard.
 
 
+A few days after the incident the Los Angeles police arrested two suspects, Malcolm Ricardo Collins, and his wife, Janet on the basis that the the couple fit the description of the man and woman who committed the robbery. The man did not have a beard, though he admitted that he sometimes wore one. 
 
-A few days after the incident a Los Angeles police officer spotted a yellow Lincoln with an off-white top in front of the defendants’ home and spoke with them, explaining that he was investigating a robbery. He noted that the suspects fit the description of the man and woman who had committed the crime, except that the man did not have a beard, though he admitted that he sometimes wore one. Later that day the Los Angeles police arrested the two suspects, Malcolm Ricardo Collins, and his wife, Janet.
-
-
-
-The evidence against the couple was scant, and the case rested heavily on the identification by the victim and the witness, John Bass. Unfortunately for the prosecution, neither proved to be a star on the witness stand. The victim could not identify Janet as the perpetrator and hadn’t seen the driver at all. John Bass had not seen the perpetrator and said at the police lineup that he could not positively identify Malcolm Collins as the driver. And so, it seemed, the case was falling apart.
+The evidence against the couple was minimal, and neither witness could positively identify either Malcolm or Janet Collins as the driver of perpetrator. The case seemed hopeless.
 
 Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] a Negro with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
 
