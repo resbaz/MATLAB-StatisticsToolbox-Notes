@@ -36,10 +36,23 @@ ans =
 ```
 ### *Challenge*
 ```Matlab
-% CHALLENGE
+%% CHALLENGE
 % Work out how to use the rand, randn and randi commands
 % to generate a random matrix instead of a
 % single numbers
+
+
+%% EXTENSION
+% Write a function that simulates the output of a dice being
+% rolled. If you want, give your function an input Nd, 
+% which indicates how many die to roll.
+% e.g.
+
+dice(5)
+
+ans =
+
+     1     4     6     1     2
 ```
 
 The essence of simulation is using random numbers in a loop. For example let's say there is a panel of 
