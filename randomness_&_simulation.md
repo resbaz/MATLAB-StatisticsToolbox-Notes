@@ -42,4 +42,7 @@ ans =
 % single numbers
 ```
 
-The essence of simulation is using random numbers in a loop
+The essence of simulation is using random numbers in a loop. For example let's say there is a panel of 
+
+### *Challenge*
+The birthday party problem is a classic example of how much humans underestimate statistics
