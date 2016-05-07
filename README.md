@@ -22,13 +22,13 @@ A few days after the incident the Los Angeles police arrested two suspects, Malc
 
 The evidence against the couple was minimal. Neither of two witnesses were able to positively identify Malcolm or Janet Collins as the driver or perpetrator. The case seemed hopeless.
 
-Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] a Negro with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
+Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] an African American with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
 
 | Characteristic | Individual Probability |
 | -- | -- |
 | Partly yellow automobile | $$\frac{1}{10}$$ |
 | Man with mustache  | $$\frac{1}{4}$$ |
-| Negro man with beard  | $$\frac{1}{10}$$ |
+| African American man with beard  | $$\frac{1}{10}$$ |
 | Girl with ponytail  | $$\frac{1}{10}$$ |
 | Girl with blond hair  | $$\frac{1}{3}$$ |
 | Interracial couple in car |  $$\frac{1}{1000}$$ |
