@@ -18,11 +18,10 @@ dark,” and had hair “between a dark blond and a light blond,” but lighter 
 on the street at the end of the alley, was in front of his house watering his lawn. His attention was attracted by “a lot of crying and screaming” coming from the alley. As he looked in that direction, he saw a woman run out of the alley and enter a yellow automobile parked across the street from him. He was unable to give the make of the car. The car started off immediately and pulled wide around another parked vehicle so that in the narrow street it passed within six feet of Bass. The latter then saw that it was being driven by a male Negro, wearing a mustache and beard.
 
 
-A few days after the incident the Los Angeles police arrested two suspects, Malcolm Ricardo Collins, and his wife, Janet on the basis that the the couple fit the description of the man and woman who committed the robbery. The man did not have a beard, though he admitted that he sometimes wore one. 
+A few days after the incident the Los Angeles police arrested two suspects, Malcolm Ricardo Collins, and his wife, Janet on the basis that the the couple fit the description of the man and woman who committed the robbery. 
+The evidence against the couple was minimal. Neither of two witnesses were able to positively identify Malcolm or Janet Collins as the driver or perpetrator. 
 
-The evidence against the couple was minimal. Neither of two witnesses were able to positively identify Malcolm or Janet Collins as the driver or perpetrator. The case seemed hopeless.
-
-Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] an African American with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
+The case seemed unlikely to win, until the prosecution's brough out a 'mathematical' argument as their trump card. A witness, described only as an "instructor of mathematics at a state college", testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] an African American with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. As proof, the prosecution presented this table, quoted here verbatim from the supreme court decision:
 
 | Characteristic | Individual Probability |
 | -- | -- |
