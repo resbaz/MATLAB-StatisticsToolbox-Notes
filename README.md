@@ -20,7 +20,7 @@ on the street at the end of the alley, was in front of his house watering his la
 
 A few days after the incident the Los Angeles police arrested two suspects, Malcolm Ricardo Collins, and his wife, Janet on the basis that the the couple fit the description of the man and woman who committed the robbery. The man did not have a beard, though he admitted that he sometimes wore one. 
 
-The evidence against the couple was minimal, and neither witness could positively identify either Malcolm or Janet Collins as the driver of perpetrator. The case seemed hopeless.
+The evidence against the couple was minimal. Neither of two witnesses were able to positively identify Malcolm or Janet Collins as the driver or perpetrator. The case seemed hopeless.
 
 Enter the star witness, described in the California Supreme Court opinion only as “an instructor of mathematics at a state college.” This witness testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] a Negro with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. To illustrate its point, the prosecution presented this table, quoted here verbatim from the supreme court decision
 
