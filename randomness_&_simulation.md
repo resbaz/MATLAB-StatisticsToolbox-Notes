@@ -41,3 +41,5 @@ ans =
 % to generate a random matrix instead of a
 % single numbers
 ```
+
+The essence of simulation is using random numbers in a loop
