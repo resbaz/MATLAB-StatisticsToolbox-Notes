@@ -55,7 +55,7 @@ ans =
      1     4     6     1     2
 ```
 
-The essence of simulation is using random numbers in a loop. For example let's say there is a panel of 
+Using random numbers in a loop is a major part of running simulations. For example let's say there is a panel of 
 
 ### *Challenge*
 The birthday party problem is a classic example of how humans can underestimate chance events.
