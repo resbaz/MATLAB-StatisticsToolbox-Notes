@@ -157,4 +157,4 @@ end
 
 ![](birthday.jpg)
 
-You need 23 people in a room to have at least a 50% chance that two or more people share a birthday.
+You need 23 people in the room to have at least a 50% chance that two or more people share a birthday.
