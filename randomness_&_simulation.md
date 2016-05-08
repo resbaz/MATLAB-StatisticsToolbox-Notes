@@ -148,7 +148,7 @@ I ran a simulation with two loops to check different sized groups of people with
 Nppl = 100;
 Ntrials = 10000;
 
-for person_idx = 1:1Nppl
+for person_idx = 1:Nppl
   for trial_idx = 1:Ntrials
   
   end
@@ -156,3 +156,5 @@ end
 ```
 
 ![](birthday.jpg)
+
+You need 23 people in a room to have at least a 50% chance that two or more people share a birthday.
