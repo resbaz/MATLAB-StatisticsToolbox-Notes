@@ -27,7 +27,8 @@ A witness, described only as an "instructor of mathematics at a state college", 
 | Girl with blond hair  | $$\frac{1}{3}$$ |
 | Interracial couple in car |  $$\frac{1}{1000}$$ |
 
-The math instructor called by the prosecution concluded that the chances of a couple fitting all these distinctive
-characteristics are 1 in 12 million. Accordingly, he said, one could infer that the chances that the couple was innocent were 1 in 12 million.
+The math instructor called by the prosecution concluded that the chances of a couple fitting all these distinctive characteristics are 1 in 12 million. Accordingly, he said, one could infer that the chances that the couple was innocent were 1 in 12 million.
 
 The jury bought it and convicted the couple.
+
+(The conviction was overturned by the 
