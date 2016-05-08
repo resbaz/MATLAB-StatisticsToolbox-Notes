@@ -120,7 +120,7 @@ NB: Gaussians are continuous and binomial values are discrete. One way to make t
 
 
 ### *Challenge*
-The birthday party problem is a classic example of how humans can underestimate chance events.
+The birthday party problem:
 
 How many people do you need to have in a room for there to be a more than 50% chance that two of them will have the same birth date? (Assume every birth date is equally likely).
 
@@ -131,6 +131,12 @@ How many people do you need to have in a room for there to be a more than 50% ch
 ```
 
 There are lots of ways this could be done, so think about what your code should do before you write it. For example, I ran a simulation with two loops to generate this plot:
+
+
+
+---
+
+
 
 ``` Matlab
 Nppl = 100;
