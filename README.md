@@ -31,4 +31,4 @@ The math instructor called by the prosecution concluded that the chances of a co
 
 The jury bought it and convicted the couple.
 
-(The conviction was later overturned)
+(Luckily, the conviction was later overturned)
