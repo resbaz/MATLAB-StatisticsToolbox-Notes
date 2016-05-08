@@ -130,13 +130,15 @@ How many people do you need to have in a room for there to be a more than 50% ch
 % to the birthday party problem
 ```
 
-There are lots of ways this could be done, so think about what your code should do before you write it. For example, I ran a simulation with two loops to generate this plot:
+There are lots of ways this could be done, so think about what your code should do before you write it. 
 
-
+SPOILER ALERT: for a hint (and the answer to the birthday party problem), keep reading
 
 ---
 
 
+
+I ran a simulation with two loops to generate this plot:
 
 ``` Matlab
 Nppl = 100;
