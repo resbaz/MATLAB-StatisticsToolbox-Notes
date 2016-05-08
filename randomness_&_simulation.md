@@ -129,3 +129,18 @@ How many people do you need to have in a room for there to be a more than 50% ch
 % Use a simulation to numerically estimate the answer
 % to the birthday party problem
 ```
+
+There are lots of ways this could be done, so think about what your code should do before you write it. For example, I ran a simulation with two loops to generate this plot:
+
+``` Matlab
+Nppl = 100;
+Ntrials = 10000;
+
+for person_idx = 1:1Nppl
+  for trial_idx = 1:Ntrials
+  
+  end
+end
+```
+
+![](birthday.jpg)
