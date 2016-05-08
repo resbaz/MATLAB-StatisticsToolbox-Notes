@@ -138,7 +138,7 @@ SPOILER ALERT: for a hint (and the answer to the birthday party problem), keep r
 
 
 
-I ran a simulation with two loops to generate this plot:
+I ran a simulation with two loops to check different sized groups of people with randomly assigned birthdays:
 
 ``` Matlab
 Nppl = 100;
