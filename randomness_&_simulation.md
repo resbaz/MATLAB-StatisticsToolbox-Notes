@@ -130,8 +130,8 @@ How many people do you need to have in a room for there to be a more than 50% ch
 % to the birthday party problem
 
 % HINT: The function unique() will tell you how many unique
-% numbers are in a vector. In this case, consider a vector
-% of birth days (random numbers bw 1 - 365).
+% numbers are in a vector. In this case, a vector could contain
+% randomly assigned birth dates.
 ```
 
 There are lots of ways this could be done, so think about what your code should do before you write it. 
