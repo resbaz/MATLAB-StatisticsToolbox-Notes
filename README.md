@@ -14,7 +14,9 @@ In 1968 the case *People v. Collins*, was heard by the California Supreme Court.
 A few days after the incident the Los Angeles police arrested two suspects, Malcolm Ricardo Collins, and his wife, Janet on the basis that the the couple fit the description of the man and woman who committed the robbery. 
 The evidence against the couple was minimal. Neither of two witnesses were able to positively identify Malcolm or Janet Collins as the driver or perpetrator. 
 
-The case seemed unlikely to win, until the prosecution's brough out a 'mathematical' argument as their trump card. A witness, described only as an "instructor of mathematics at a state college", testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] an African American with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. As proof, the prosecution presented this table, quoted here verbatim from the supreme court decision:
+The case seemed unlikely to win, until the prosecution made the following 'mathematical' argument in favor of conviction. 
+
+A witness, described only as an "instructor of mathematics at a state college", testified that the fact that the defendants were “a Caucasian woman with a blond ponytail ... [and] an African American with a beard and mustache” who drove a partly yellow automobile was enough to convict the couple. As proof, the prosecution presented this table, quoted here verbatim from the supreme court decision:
 
 | Characteristic | Individual Probability |
 | -- | -- |
