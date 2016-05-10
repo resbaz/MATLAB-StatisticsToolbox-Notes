@@ -149,10 +149,9 @@ Flinders8 = Count_Flinders(Hour_Flinders==8);
 
 We can fit the probability density function to our histograms using a kernel-density estimation (`ksdensity`), or we can check the fit of specific distribution shapes, such as Gaussian, exponential, etc (`fitdist`).
 
-Make some noisy exponential data, x
+Going to make some fake data using the random distribution
 ```Matlab
-t = 0:0.01:10;
-x = exp(0.3*t) + randn(size(t))
+x = -log(1-rand(1,100)) / 0.1
 ```
 
 Fit a distribution
