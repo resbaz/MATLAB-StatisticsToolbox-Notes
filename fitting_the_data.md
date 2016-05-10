@@ -165,7 +165,16 @@ pd =
   Exponential distribution
     mu = 9.02432   [7.48726, 11.0913]
 ```
+
 We get a distribution parameter and confidence bounds. The exponential distribution just has one parameter. You can always read more about the distribution by clicking the link in MATLAB.
+
+We can check the estimate against the histogram
+``` Matlab
+x_vals = 0:0.1:max(x);
+histogram(x,'normalization','pdf')
+hold on;
+plot(x_vals, 1/pd.mu * exp(-1/pd.mu * x_vals))
+```
 
 ### *Challenge*
 ``` Matlab
