@@ -93,17 +93,23 @@ x = t .^ idx;
 The function `kmeans` is a good "quick and dirty" way to segment data into groups. 
 We can make a toy example vector, `x` with two peaks in the histogram.
 ``` Matlab
-% make a vector of random numbers with half centred around -10 and half around 10.
+% make a vector of random numbers with 
+% half centred around -10 and half around 10.
 x = [-10+5*randn(1,100), 10+5*randn(1,100)];
 
+% use kmeans to find the clusters
 idx = kmeans(x',2);
 ```
+We can plot the data separately using the cluster index
 ```Matlab
 plot(x(idx==1),'bo')
 hold on;
 plot(x(idx==2),'rx')
 ```
-
+We can also get the centre point of each cluster
+```Matlab
+[idx,C] = kmeans(x',2);
+```
 ### *Challenge*
 ``` Matlab
 %% CHALLENGE 
