@@ -86,6 +86,10 @@ x = t .^ idx;
 % What about if you make the functions in X 
 % sinusoidal instead of linear? 
 
+% EXTENSION
+% Check the correlation betweeen pedestrian counts at
+% Bourke street from your previous code
+
 ```
 
 ## Clustering
