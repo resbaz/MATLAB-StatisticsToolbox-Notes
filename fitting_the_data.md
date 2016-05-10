@@ -165,6 +165,7 @@ pd =
   Exponential distribution
     mu = 9.02432   [7.48726, 11.0913]
 ```
+We get a distribution parameter and confidence bounds. The exponential distribution just has one parameter. You can always read more about the distribution by clicking the link in MATLAB.
 
 ### *Challenge*
 ``` Matlab
