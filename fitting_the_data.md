@@ -155,6 +155,9 @@ We can fit the probability density function to our histograms using a kernel-den
 % Fit a normal distribution to each of the clusters
 ```
 
+There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
+
+![](dist.jpg)
 
 ## Regression
 
