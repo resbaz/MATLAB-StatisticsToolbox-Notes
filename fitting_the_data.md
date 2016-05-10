@@ -176,6 +176,8 @@ hold on;
 plot(x_vals, 1/pd.mu * exp(-1/pd.mu * x_vals))
 ```
 
+![](expdist.jpg)
+
 ### *Challenge*
 ``` Matlab
 % CHALLENGE
