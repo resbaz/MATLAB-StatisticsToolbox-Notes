@@ -114,7 +114,7 @@ We can also get the centre point of each cluster
 % we can plot a line through the middle using the 
 % line function
 line([0 100],[C(1) C(1)],'color','k')
->> line([0 100],[C(2) C(2)],'color','k')
+line([0 100],[C(2) C(2)],'color','k')
 ```
 ### *Challenge*
 ``` Matlab
