@@ -90,15 +90,31 @@ x = t .^ idx;
 
 ## Clustering
 
-The function `kmeans` is a good "quick and dirty" way to segment data into groups. There are plenty of other more sophisticated options in the Machine Learning Toolbox.
+The function `kmeans` is a good "quick and dirty" way to segment data into groups. 
 
 ### *Challenge*
 ``` Matlab
-% CHALLENGE 
-% Look up kmeans and use it to cluster the pedestrian
-% counts at Flinders street at 8am into two or more groups.
+%% CHALLENGE 
+% Look up kmeans in the help documentation and use 
+% it to cluster the pedestrian
+% counts at Flinders street at 8am (Flinders8)
+% into two or more groups.
+
+% HINT kmeans has two inputs - a vector containing 
+% your pedestrian counts, and the number of clusters
 
 Flinders8 = Count_Flinders(Hour_Flinders==8);
+
+%% EXTENSION
+% 1. Plot your two clusters as separate histograms
+% 2. Include a vertical line on the graph marking the 
+% center of the cluster (the function line() will help)
+% 
+
+%% EXTENSION
+% Can you see any factors that are different between 
+% the clusters? Check the day of the week. 
+
 ```
 
 ## Probability
