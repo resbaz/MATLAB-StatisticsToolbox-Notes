@@ -149,16 +149,23 @@ Flinders8 = Count_Flinders(Hour_Flinders==8);
 
 We can fit the probability density function to our histograms using a kernel-density estimation (`ksdensity`), or we can check the fit of specific distribution shapes, such as Gaussian, exponential, etc (`fitdist`).
 
+Make some noisy exponential data, x
+```Matlab
+t = 0:0.01:10;
+x = exp(0.3*t) + randn(size(t))
+```
+
+Fit a distribution
+```Matlab
+t = 0:0.01:10;
+x = exp(0.3*t) + randn(size(t))
+```
+
 ### *Challenge*
 ``` Matlab
 % CHALLENGE
 % Use fitdist to fit a normal distribution to 
 % each of the clusters from the previous challenge
-```
-
-```Matlab
-t = 0:0.01:10;
-x = exp(0.3*t) + randn(size(t))
 ```
 
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
