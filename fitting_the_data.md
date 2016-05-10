@@ -152,7 +152,8 @@ We can fit the probability density function to our histograms using a kernel-den
 ### *Challenge*
 ``` Matlab
 % CHALLENGE
-% Fit a normal distribution to each of the clusters
+% Use fitdist to fit a normal distribution to 
+% each of the clusters from the previous challenge
 ```
 
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
