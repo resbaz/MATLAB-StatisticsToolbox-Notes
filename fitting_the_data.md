@@ -156,6 +156,11 @@ We can fit the probability density function to our histograms using a kernel-den
 % each of the clusters from the previous challenge
 ```
 
+```Matlab
+t = 0:0.01:10;
+x = exp(0.3*t) + randn(size(t))
+```
+
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
 
 ![](dist.jpg)
