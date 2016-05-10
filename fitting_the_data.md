@@ -108,7 +108,13 @@ plot(x(idx==2),'rx')
 ```
 We can also get the centre point of each cluster
 ```Matlab
+% a second output includes the centre points
 [idx,C] = kmeans(x',2);
+
+% we can plot a line through the middle using the 
+% line function
+line([0 100],[C(1) C(1)],'color','k')
+>> line([0 100],[C(2) C(2)],'color','k')
 ```
 ### *Challenge*
 ``` Matlab
