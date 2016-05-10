@@ -95,8 +95,10 @@ The function `kmeans` is a good "quick and dirty" way to segment data into group
 ### *Challenge*
 ``` Matlab
 % CHALLENGE 
-% Look up kmeans and use it to cluster the previous 
-% data into two groups
+% Look up kmeans and use it to cluster the pedestrian
+% counts at Flinders street at 8am into two or more groups.
+
+Flinders8 = Count_Flinders(Hour_Flinders==8);
 ```
 
 ## Probability
