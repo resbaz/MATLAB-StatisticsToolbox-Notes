@@ -154,10 +154,16 @@ Going to make some fake data using the random distribution
 x = -log(1-rand(1,100)) / 0.1
 ```
 
-Fit a distribution
+Fit an exponential distribution
 ```Matlab
-t = 0:0.01:10;
-x = exp(0.3*t) + randn(size(t))
+pd = fitdist(x','exp')
+
+pd = 
+
+  ExponentialDistribution
+
+  Exponential distribution
+    mu = 9.02432   [7.48726, 11.0913]
 ```
 
 ### *Challenge*
