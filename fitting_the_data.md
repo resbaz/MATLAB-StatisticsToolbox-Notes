@@ -92,6 +92,10 @@ x = t .^ idx;
 
 The function `kmeans` is a good "quick and dirty" way to segment data into groups. 
 
+``` Matlab
+
+```
+
 ### *Challenge*
 ``` Matlab
 %% CHALLENGE 
@@ -100,8 +104,8 @@ The function `kmeans` is a good "quick and dirty" way to segment data into group
 % counts at Flinders street at 8am (Flinders8)
 % into two or more groups.
 
-% HINT kmeans has two inputs - a vector containing 
-% your pedestrian counts, and the number of clusters
+% HINT your input should be the pedestrian 
+% counts from the previous challenge: 
 
 Flinders8 = Count_Flinders(Hour_Flinders==8);
 
