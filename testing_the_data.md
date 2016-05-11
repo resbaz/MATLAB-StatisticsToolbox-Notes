@@ -1,6 +1,6 @@
 # Testing the Data
 
-## Regression
+## Linear Regression
 
 The function `glmfit` standards for generalised linear model fit and can be used for linear regression and log regression as well as a few more (binomial etc).
 
@@ -79,3 +79,4 @@ Root Mean Squared Error: 366
 R-squared: 0.91,  Adjusted R-Squared 0.91
 F-statistic vs. constant model: 4.85e+05, p-value = 0
 ```
+### Logistic regression
