@@ -136,14 +136,14 @@ Let's plot the results. We'll make class 2 red, and class 1 blue. We'll make the
 ``` Matlab
 % these are correctly predicted values for class 2
 % we'll make class red 
-plot(X(output > 0.5 & Y == 1),'ro')
+plot(X(output >= 0.5 & Y == 1),'ro')
 hold on
 % these are the correctly predicted values for class 1
 plot(X(output < 0.5 & Y == 0),'bo')
 
 % now the incorrect predictions for 
 % class 2 and class 1
-plot(X(output > 0.5 & Y == 0),'rx')
+plot(X(output >= 0.5 & Y == 0),'rx')
 plot(X(output < 0.5 & Y == 1),'bx')
 ```
 
@@ -151,9 +151,9 @@ We can also count how many we got right and wrong
 
 ``` Matlab
 % wrong
-Nwrong = sum(output > 0.5 & Y == 0) + sum(output < 0.5 & Y == 1);
+Nwrong = sum(output >= 0.5 & Y == 0) + sum(output < 0.5 & Y == 1);
 
-Nright = sum(output < 0.5 & Y == 1) + sum(output < 0.5 & Y == 0);
+Nright = sum(output >= 0.5 & Y == 1) + sum(output < 0.5 & Y == 0);
 ```
 
 ### *Challenge*
