@@ -85,10 +85,10 @@ F-statistic vs. constant model: 4.85e+05, p-value = 0
 
 ## Logistic regression
 
-We can also use `glmfit` for logistic regression.
+We can also use `glmfit` for logistic regression, using the options 'binomial' and 'logit'
 
 ```Matlab
-
+log_coeff = glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
 ```
 
 ### *Challenge*
