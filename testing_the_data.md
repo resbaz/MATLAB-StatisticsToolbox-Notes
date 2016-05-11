@@ -84,3 +84,16 @@ F-statistic vs. constant model: 4.85e+05, p-value = 0
 Many standard tests are built into MATLAB. Eg to test if data is normally distributed we can use `kstest`.
 
 Another common test is `ttest2` (two-sampled t-test) and its non-parametric cousin `ranksum` (Wilcoxon rank sum / Mann-Whitney U test - why do statisticians like to name everything after themselves?).
+
+### *Challenge
+``` Matlab
+%% CHALLENGE
+%Check if the weekday pedestrian count data from
+%Southern Cross station and Flinders Street
+%station is normally distributed.
+
+%% CHALLENGE
+%Check if there is any difference between the two
+%distributions? Use ttest2 if the data are normal,
+%or ranksum if they are not.
+```
