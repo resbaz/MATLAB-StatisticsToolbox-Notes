@@ -55,10 +55,9 @@ You can also access test statistics:
 
 % What other stats can you get from glmfit?
 ```
+There is also a function (I think it is for people who like Stata) that will print statistics into the command window
 
 ``` Matlab
-Another method (I think it is for people who like Stata) will print statistics into the command window
-
 fitlm(BourkeN,BourkeS)
 
 ans = 
