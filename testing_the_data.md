@@ -129,7 +129,18 @@ input = log_model(1) + log_model(2)*X;
 output = 1 ./ (1 + exp(-input));
 ```
 
-The output is between 0 and 1. It is usual to classify the input as class 1 (or Y = 0) for output < 0.5 and class 2 (or Y = 1) for output > 0.5.
+The output is between 0 and 1. It is usual to classify the input as class 1 (or Y = 0) for output < 0.5 and class 2 (or Y = 1) for output > 0.5. 
+
+Let's plot the results. We'll make class 2 red, and class 1 blue. We'll make the true predictions circles and the false ones crosses.
+
+``` Matlab
+% these are correctly predicted values for class 2
+% we'll make class red 
+plot(X(output > 0.5 & Y == 1),'ro')
+hold on
+% these are the true
+plot(X(output < 0.5 & Y == 0),'bo')
+```
 
 ### *Challenge*
 ``` Matlab
