@@ -108,18 +108,28 @@ X = [x1 ; x2];
 % 1 = class 2
 Y = [zeros(size(x1)) ; ones(size(x2))];
 
-glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
+% fit a logistic regresion model
+log_model = glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
 
-ans =
+log_model =
 
    -2.9920
     2.0685
 ```
 
+The model contains an intercept, $$w_0$$ and weights for the input (only one dimension in our case - $$w_1$$) and is given by:
+$$ output = \frac{1}{1 + exp(-(w_0 + w_1X))}$$
 
+So to get the output of our model
 ```Matlab
-log_coeff = glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
+% apply our weights
+input = log_model(1) + log_model(2)*X;
+
+% run the model
+output = 1 ./ (1 + exp(-input));
 ```
+
+The output is between 0 and 1. It is usual to classify the input as class 1 (or Y = 0) for output < 0.5 and class 2 (or Y = 1) for output > 0.5.
 
 ### *Challenge*
 ``` Matlab
