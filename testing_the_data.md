@@ -79,6 +79,10 @@ Root Mean Squared Error: 366
 R-squared: 0.91,  Adjusted R-Squared 0.91
 F-statistic vs. constant model: 4.85e+05, p-value = 0
 ```
+
+### *Challenge*
+
+
 ## Logistic regression
 
 
