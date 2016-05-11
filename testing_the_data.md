@@ -94,8 +94,29 @@ We can also use `glmfit` for logistic regression.
 ### *Challenge*
 ``` Matlab
 %% CHALLENGE
-% Use logistic regression to distinguish between
-% two Gaussians with different means
+% Using logistic regression to distinguish between
+% two Gaussians with different means 
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Use 80% of your data from Flinders street 
+% station between 8am - 9am to fit a logistic
+% regression model
+
+% Run your model on the remaining 20% of the data
+% and classify it as either a weekend or weeday
+
+%% EXTENSION
+% how accurate is your classifier?
+
+%% EXTENSION
+% make your accuracy measure more robust using
+% k-fold cross validation
+% That means running your entire code (fit model,
+% run model, test performance) in a loop. 
+% For each loop use a different partition of data
+% to train and test. With 10 loops, train on 
+% 90% of the data, and test on 10%.
+% With 5 loops, train on 80% of the data and 
+% test on 20%.
 
 ```
 
