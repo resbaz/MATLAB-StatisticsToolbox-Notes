@@ -107,6 +107,13 @@ X = [x1 ; x2];
 % 0 = class 1
 % 1 = class 2
 Y = [zeros(size(x1)) ; ones(size(x2))];
+
+glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
+
+ans =
+
+   -2.9920
+    2.0685
 ```
 
 
