@@ -85,6 +85,19 @@ F-statistic vs. constant model: 4.85e+05, p-value = 0
 
 ## Logistic regression
 
+We can also use `glmfit` for logistic regression.
+
+```Matlab
+
+```
+
+### *Challenge*
+``` Matlab
+%% CHALLENGE
+% Use logistic regression to distinguish between
+% two Gaussians with different means
+
+```
 
 ## Testing Gaussians
 Many standard tests are built into MATLAB. For example, to test if data are normally distributed we can use `kstest`.
