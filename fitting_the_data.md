@@ -188,7 +188,3 @@ plot(x_vals, 1/pd.mu * exp(-1/pd.mu * x_vals))
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
 
 ![](dist.jpg)
-
-## Regression
-
-The function `glmfit` standards for generalised linear model fit and can be used for linear regression and log regression as well as a few more (binomial etc)
