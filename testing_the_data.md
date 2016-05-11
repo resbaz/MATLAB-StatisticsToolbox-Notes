@@ -147,6 +147,15 @@ plot(X(output > 0.5 & Y == 0),'rx')
 plot(X(output < 0.5 & Y == 1),'bx')
 ```
 
+We can also count how many we got right and wrong
+
+``` Matlab
+% wrong
+Nwrong = sum(output > 0.5 & Y == 0) + sum(output < 0.5 & Y == 1);
+
+Nright = sum(output < 0.5 & Y == 1) + sum(output < 0.5 & Y == 0);
+```
+
 ### *Challenge*
 ``` Matlab
 %% CHALLENGE
