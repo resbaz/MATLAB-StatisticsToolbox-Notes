@@ -85,7 +85,7 @@ Many standard tests are built into MATLAB. Eg to test if data is normally distri
 
 Another common test is `ttest2` (two-sampled t-test) and its non-parametric cousin `ranksum` (Wilcoxon rank sum / Mann-Whitney U test - why do statisticians like to name everything after themselves?).
 
-### *Challenge
+### *Challenge*
 ``` Matlab
 %% CHALLENGE
 %Check if the weekday pedestrian count data from
