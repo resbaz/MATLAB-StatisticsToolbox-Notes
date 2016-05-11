@@ -184,6 +184,13 @@ plot(x_vals, 1/pd.mu * exp(-1/pd.mu * x_vals))
 % Use fitdist to fit a normal distribution to 
 % each of the clusters from the previous challenge
 % (flinders street on the weekend and weekday)
+
+% EXTENSION
+% create a line plot of the estimated Gaussian
+% distributions on top of the histograms
+% HINT: you don't have to look up the equation for a 
+% Gaussian pdf to plot one, you can use the
+% function normpdf()
 ```
 
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
