@@ -1,4 +1,4 @@
-# Testing the Data
+ # Testing the Data
 
 ## Linear Regression
 
@@ -85,7 +85,30 @@ F-statistic vs. constant model: 4.85e+05, p-value = 0
 
 ## Logistic regression
 
-We can also use `glmfit` for logistic regression, using the options 'binomial' and 'logit'
+We can also use `glmfit` for logistic regression, using the options 'binomial' and 'logit'. For an example, let's look at separating two Gaussian distributions.
+
+```Matlab
+% use randn to make two fake distributions
+mu1 = 1;
+sigma1 = 0.5;
+mu2 = 2;
+sigma2 = 1;
+x1 = mu1 + sigma1 * randn(100,1);
+x2 = mu2 + sigma2 * randn(100,1);
+```
+
+Now we need to treat them as one variable, and create a model that predicts class 1 (x1) or class 2 (x2).
+
+``` Matlab
+% this is our input
+X = [x1 ; x2];
+
+% this is our class label
+% 0 = class 1
+% 1 = class 2
+Y = [zeros(size(x1)) ; ones(size(x2))];
+```
+
 
 ```Matlab
 log_coeff = glmfit(X,[Y ones(size(Y))],'binomial','link','logit')
