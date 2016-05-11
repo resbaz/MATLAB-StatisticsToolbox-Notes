@@ -81,4 +81,6 @@ F-statistic vs. constant model: 4.85e+05, p-value = 0
 ```
 ## Logistic regression
 ## Testing Gaussians
-Many standard tests are built into MATLAB. Eg to test if data is normally distributed we can use 
+Many standard tests are built into MATLAB. Eg to test if data is normally distributed we can use `kstest`.
+
+Another common test is `ttest2` (two-sampled t-test) and its non-parametric cousin `ranksum` (Wilcoxon rank sum / Mann-Whitney U test - why do statisticians like to name everything after themselves?).
