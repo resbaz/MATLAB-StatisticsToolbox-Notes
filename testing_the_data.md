@@ -138,8 +138,13 @@ Let's plot the results. We'll make class 2 red, and class 1 blue. We'll make the
 % we'll make class red 
 plot(X(output > 0.5 & Y == 1),'ro')
 hold on
-% these are the true
+% these are the correctly predicted values for class 1
 plot(X(output < 0.5 & Y == 0),'bo')
+
+% now the incorrect predictions for 
+% class 2 and class 1
+plot(X(output > 0.5 & Y == 0),'rx')
+plot(X(output < 0.5 & Y == 1),'bx')
 ```
 
 ### *Challenge*
