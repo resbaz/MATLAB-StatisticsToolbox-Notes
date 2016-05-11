@@ -183,6 +183,7 @@ plot(x_vals, 1/pd.mu * exp(-1/pd.mu * x_vals))
 % CHALLENGE
 % Use fitdist to fit a normal distribution to 
 % each of the clusters from the previous challenge
+% (flinders street on the weekend and weekday)
 ```
 
 There are heaps of distributions included in the standard `fitdist` function, most of which I have never even heard of...
