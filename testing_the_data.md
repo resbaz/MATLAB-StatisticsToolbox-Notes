@@ -32,6 +32,13 @@ scatter(BourkeN,BourkeS)
 hold on;
 plot(BourkeN, linear_coeff(1) + linear_coeff(2) * BourkeN)
 ```
+
+You can also access test statistics:
+
+```Matlab
+[linear_coeff,~,stats] = glmfit(BourkeN,BourkeS);
+```
+
 ### *Challenge*
 
 ``` Matlab
@@ -43,8 +50,10 @@ plot(BourkeN, linear_coeff(1) + linear_coeff(2) * BourkeN)
 %% CHALLENGE 2
 % Use glmfit to output confidence limits and 
 % plot them as dashed lines on your plot
+% HINT: use the standard error (se) in the output
+% statistics of glmfit
 
-% What other stats can you output from glmfit?
+% What other stats can you get from glmfit?
 ```
 
 ``` Matlab
