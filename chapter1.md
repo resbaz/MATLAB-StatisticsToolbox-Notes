@@ -1,7 +1,7 @@
 # Part One: Getting the Data
  The first difficulty of real data is that it comes from many different sources, which may not be optimized for MATLAB. This part will cover some basic tricks for automatically reading in large amounts of data
 
-## Folder structures (test)
+## Folder structures
 In MATLAB you navigate between files using strings
 
 ```Matlab
