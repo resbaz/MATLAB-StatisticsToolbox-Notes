@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Info](README.md)
 * [Intro](introduction.md)
 * [Getting the Data](chapter1.md)
 * [Visualizing the Data](visualizing_the_data.md)
