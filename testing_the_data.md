@@ -115,7 +115,7 @@ log_model =
 ```
 
 The model contains an intercept, $$w_0$$ and weights for the input (only one dimension in our case - $$w_1$$) and is given by:
-$$ output = \frac{1}{1 + exp(-(w_0 + w_1X))}$$
+$$ \mathrm{output} = \frac{1}{1 + \exp\left(-(w_0 + w_1X)\right)}$$
 
 So to get the output of our model
 ```Matlab
