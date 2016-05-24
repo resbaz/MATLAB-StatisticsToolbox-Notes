@@ -6,4 +6,5 @@
 * [Fitting the Data](fitting_the_data.md)
 * [Testing the Data](testing_the_data.md)
 * [Randomness & Simulation](randomness_&_simulation.md)
+* Intro
 
