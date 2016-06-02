@@ -1,4 +1,4 @@
-# MATLAB Statistics Toolbox Course Notes
+# ResGuides: MATLAB Statistics Toolbox
 
 This book contains the course notes for the ResBaz MATLAB Statistics Toolbox Extension Course. 
 The lesson repository can be found [here](https://github.com/resbaz/MATLAB-StatisticsToolbox)
